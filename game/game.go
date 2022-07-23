@@ -15,7 +15,7 @@ func (p Player) NewGame() {
 		g := p.DoMove(&board)
 		switch g {
 		case InvalidCords:
-			fmt.Println("Bad coords. Example: 5 9\nFlagging a cell: 5 9 Flag")
+			fmt.Println("Bad coords. Example: 5,9\nFlagging a cell: 5,9 Flag")
 		case NotEnoughFlags:
 			fmt.Println("You don't have enough flags. You can unflagg a cell by flagging it again.")
 		case Over:
