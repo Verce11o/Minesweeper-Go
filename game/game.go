@@ -9,7 +9,7 @@ const BombAmount = GridSize * GridSize / 6
 
 func (p Player) NewGame() {
 	board := BuildBoard()
-	fmt.Println("Please consider using following example:\nx,y\nYou can add 'Flag' to flag/unflag cell.")
+	fmt.Println("Please consider using following example:\nx,y,flag(if necessary)")
 	for i := 0; !board.isEnd(); i++ {
 		fmt.Println(board)
 		g := p.DoMove(&board)
