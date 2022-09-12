@@ -1,7 +1,7 @@
 package main
 
 import (
-	"minesweeper/game"
+	"github.com/Verce11o/Minesweeper-Go/game"
 )
 
 func main() {
